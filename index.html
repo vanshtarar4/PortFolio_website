@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vansh – Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -20,100 +22,158 @@
             color: white;
             font-family: 'Poppins', sans-serif;
         }
-        nav{
+
+        nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
             height: 80px;
             background-color: rgb(18, 18, 62);
-        } 
-        nav ul{
+        }
+
+        nav ul {
             display: flex;
             justify-content: center;
         }
-        nav ul li{
+
+        nav ul li {
             list-style: none;
             margin: 0 23px;
         }
-        nav ul li a{
+
+        nav ul li a {
             text-decoration: none;
             color: white;
         }
-        nav ul li a:hover{
+
+        nav ul li a:hover {
             color: rgb(153, 153, 226);
             font-size: 1.01rem;
         }
-        main hr{
+
+        main hr {
             border: 0;
             background: #9c97f1;
             height: 1.2px;
             margin: 60px 84px;
         }
-        .left{
+
+        .left {
             font-size: 1.5rem;
         }
-        .firstSection{
+
+        .firstSection {
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin: 160px 0;
         }
-        .firstSection > div{
+
+        .firstSection>div {
             width: 30%;
         }
-        .leftSection{
+
+        .leftSection {
             font-size: 3rem;
         }
-        .rightSection img{
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
             width: 80%;
         }
-        .purple{
+
+        .purple {
             color: rgb(170, 107, 228);
         }
-        .text-gray{
+
+        .text-gray {
             color: gray;
         }
-        #element{
+
+        #element {
             color: rgb(170, 107, 228);
         }
-        .secondSection{
+
+        .secondSection {
             max-width: 80vw;
             margin: auto;
             height: 80vh;
         }
-        .secondSection h1{
+
+        .secondSection h1 {
             font-size: 1.8;
         }
-        .secondSection .box{
+
+        .secondSection .box {
             background: white;
             width: 80vw;
             height: 2px;
             margin: 56px 0;
             display: flex;
         }
-        .secondSection .vertical{
+
+        .secondSection .vertical {
             height: 93px;
             width: 1px;
             background-color: white;
-            margin: 0 100px;
+            margin: 0 250px;
         }
-        .image-top{
+
+        .image-top {
             width: 23px;
             position: relative;
             top: -32px;
             left: -9px;
         }
-        .vertical-title{
+
+        .vertical-title {
             position: relative;
             top: 75px;
             width: 150px;
+            font-size: 14px;
         }
-        .vertical-desc{
+
+        .vertical-desc {
             position: relative;
             top: 86px;
             color: gray;
             width: 150px;
             font-size: 9px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
         }
     </style>
 </head>
@@ -139,6 +199,10 @@
                 Hi, My name is <span class="purple">Vansh</spanclass></span>
                 <div>and I am a </div>
                 <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
             </div>
             <div class="rightSection">
                 <img src="bg2.png">
@@ -152,86 +216,81 @@
                 <div class="vertical">
                     <img class="image-top" src="bg1.png" alt="">
                     <div class="vertical-title">
-                        HTML Developer 2010-2012
+                        Internship at Bharat Intern
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat doloribus dicta culpa adipisci numquam ullam ut, corporis dolorum labore quidem magni quod assumenda eum voluptatem temporibus obcaecati? Illum, repellat?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat doloribus dicta
+                        culpa adipisci numquam ullam ut, corporis dolorum labore quidem magni quod assumenda eum
+                        voluptatem temporibus obcaecati? Illum, repellat?
                     </div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="bg1.png" alt="">
                     <div class="vertical-title">
-                        HTML Developer 2010-2012
+                        Internship at TechForce Academy
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat doloribus dicta culpa adipisci numquam ullam ut, corporis dolorum labore quidem magni quod assumenda eum voluptatem temporibus obcaecati? Illum, repellat?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat doloribus dicta
+                        culpa adipisci numquam ullam ut, corporis dolorum labore quidem magni quod assumenda eum
+                        voluptatem temporibus obcaecati? Illum, repellat?
                     </div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="bg1.png" alt="">
                     <div class="vertical-title">
-                        HTML Developer 2010-2012
+                        GirlScript Summer of Code Contributor
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat doloribus dicta culpa adipisci numquam ullam ut, corporis dolorum labore quidem magni quod assumenda eum voluptatem temporibus obcaecati? Illum, repellat?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat doloribus dicta
+                        culpa adipisci numquam ullam ut, corporis dolorum labore quidem magni quod assumenda eum
+                        voluptatem temporibus obcaecati? Illum, repellat?
                     </div>
                 </div>
-                <div class="vertical">
-                    <img class="image-top" src="bg1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer 2010-2012
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat doloribus dicta culpa adipisci numquam ullam ut, corporis dolorum labore quidem magni quod assumenda eum voluptatem temporibus obcaecati? Illum, repellat?
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="bg1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer 2010-2012
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat doloribus dicta culpa adipisci numquam ullam ut, corporis dolorum labore quidem magni quod assumenda eum voluptatem temporibus obcaecati? Illum, repellat?
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="bg1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer 2010-2012
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat doloribus dicta culpa adipisci numquam ullam ut, corporis dolorum labore quidem magni quod assumenda eum voluptatem temporibus obcaecati? Illum, repellat?
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="bg1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer 2010-2012
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat doloribus dicta culpa adipisci numquam ullam ut, corporis dolorum labore quidem magni quod assumenda eum voluptatem temporibus obcaecati? Illum, repellat?
-                    </div>
-                </div>
-                <div class="vertical">
-                    <img class="image-top" src="bg1.png" alt="">
-                    <div class="vertical-title">
-                        HTML Developer 2010-2012
-                    </div>
-                    <div class="vertical-desc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam repellat doloribus dicta culpa adipisci numquam ullam ut, corporis dolorum labore quidem magni quod assumenda eum voluptatem temporibus obcaecati? Illum, repellat?
-                    </div>
-                </div>
-
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Vansh 's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact me</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact me</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact me</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &copy vanshsporfolio.com | All rights reserved
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Pagal Insaan', 'Budhiheen Insaan'],
-          typeSpeed: 50,
+            strings: ['Pagal Insaan', 'Budhiheen Insaan'],
+            typeSpeed: 50,
         });
-      </script>
+    </script>
 </body>
 
 </html>
