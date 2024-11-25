@@ -42,6 +42,7 @@
         }
 
         nav ul li a {
+            position: relative;
             text-decoration: none;
             color: white;
         }
@@ -49,6 +50,24 @@
         nav ul li a:hover {
             color: rgb(153, 153, 226);
             font-size: 1.01rem;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            /* Adjust the height of the line */
+            background-color: rgb(153, 153, 226);
+            /* Color of the line */
+            bottom: -5px;
+            /* Space between the text and the line */
+            left: 0;
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
         }
 
         main hr {
@@ -76,9 +95,11 @@
         .leftSection {
             font-size: 3rem;
         }
-        .leftSection .buttons{
+
+        .leftSection .buttons {
             padding: 50px 0;
         }
+
         .leftSection .btn {
             padding: 12px;
             background: #1e2167;
@@ -87,6 +108,13 @@
             border-radius: 6px;
             font-size: 20px;
             cursor: pointer;
+        }
+
+        .leftSection .btn:hover {
+            background: #565adb;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
         }
 
         .rightSection img {
@@ -201,7 +229,8 @@
                 <span id="element"></span>
                 <div class="button">
                     <button class="btn">Download Resume</button>
-                    <button class="btn">Visit Github</button>
+                    <button class="btn"><a href="https://github.com/vanshtarar4" target="_blank"
+                            style="color: white; text-decoration: none;">Visit Github</a></button>
                 </div>
             </div>
             <div class="rightSection">
@@ -287,8 +316,11 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Pagal Insaan', 'Budhiheen Insaan'],
-            typeSpeed: 50,
+            strings: ['3rd year Student', 'Tech Enthusiast', 'Problem Solver', 'Lifelong Learner'],
+            typeSpeed: 50, // Adjust this to a lower number for a slower speed
+            backSpeed: 25, 
+            smartBackspace: true, // Default value
+            loop: true // This will make the animation loop
         });
     </script>
 </body>
